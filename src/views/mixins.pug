@@ -1,0 +1,27 @@
+include variables
+
+//- Usage examples:
+//- +title('Page title')
+//- +title('Page title', 'Category title')
+//- +title('Page title', 'Sub Category title', 'Category title')
+mixin title(...titleParts)
+	- var t = "Sitename"
+	each titlePart in titleParts.reverse()
+		- t = titlePart + " / " + t
+	title #{t}
+
+
+//- Usage examples
+//- +statcss("app/mainpage_v2/mainpage_v2.min.css")
+mixin statcss(href)
+	link(
+		rel="stylesheet"
+		href=staticPath+href
+		)
+
+//- Usage examples
+//- +statjs("app/mainpage_v2/mainpage_v2.min.js")
+mixin statjs(href)
+	script(
+		src=staticPath+href
+		)

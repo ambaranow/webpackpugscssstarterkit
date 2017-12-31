@@ -1,0 +1,15 @@
+include ../mixins
+
+doctype html
+html(lang="ru")
+  include ../shared/head
+  block head
+
+  body
+    include ../components/header/header
+    .content.container-fluid
+      .row
+        .col
+          block content
+
+    include ../components/footer/footer
