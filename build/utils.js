@@ -91,18 +91,17 @@ exports.pageFile = function (dev = true) {
       inject: true
     }
 
-    // if (!dev) {
       // generate dist index.html with correct asset hash for caching.
       // you can customize output by editing /index.html
       // see https://github.com/ampedandwired/html-webpack-plugin
-      options.minify = {
-        removeComments: false,
-        collapseWhitespace: true,
-        removeAttributeQuotes: false
-      }
+      // uncomment, if you need minify html 
+      // options.minify = {
+      //   removeComments: false,
+      //   collapseWhitespace: true,
+      //   removeAttributeQuotes: false
+      // }
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       options.chunksSortMode = 'dependency'
-    // }
 
     list.push(new HtmlWebpackPlugin(options))
   })
