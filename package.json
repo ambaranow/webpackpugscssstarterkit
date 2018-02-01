@@ -1,6 +1,6 @@
 {
   "name": "webpackpugscssstarterkit",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A webpack starter kit without any framework (like Angular, Vue, React, etc.) for quickly write markup (HTML+CSS+JS).",
   "keywords": [
     "webpack",
