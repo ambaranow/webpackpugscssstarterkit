@@ -1,2 +1,9 @@
 /* need for node-sass-magic-importer */
 /* pages only css */
+
+h2, h3, h4, h5 {
+  color: $c-heading-dark;
+}
+article {
+  color: $c-text;
+}

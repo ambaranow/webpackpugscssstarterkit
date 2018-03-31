@@ -42,6 +42,7 @@ $ npm run build
 
 ### Used Frameworks and libs
 
+* [Webpack 4](https://webpack.js.org/)
 * [Bootstrap 4](https://getbootstrap.com/) + [jQuery 3](https://jquery.com/).
 * [Babel.js](https://babeljs.io/) for ES6 compile
 * [Pug](https://pugjs.org/) for HTML templates
