@@ -2,3 +2,90 @@ extends ../layouts/pages
 block title
   +title("Home")
 block content
+  article#markdown.markdown-body
+    h2#install
+      | Install
+    pre
+      code.language-bash
+        | $ yarn install
+    h2#developing
+      | Developing
+    pre
+      code.language-bash
+        | $ npm start
+    h2#production-build
+      | Production build
+    pre
+      code.language-bash
+        | $ npm run build
+    h3#structure
+      | Structure
+    pre
+      code
+        | ├ build        # Webpack configurations
+        | ├ config       # Dev and prod configurations
+        | ├ dist         # Production ready files (.gitignore, build rewrite it)
+        | ├ src          # Project development files
+        |   ├ scripts    # Javascript files
+        |   ├ styles     # Style files (scss)
+        |   ├ views      # HTML templates (pug) and Style files (scss) like components
+        |     ├ components
+        |     ├ layouts
+        |     ├ pages
+        |     ├ shared
+        |     ├ main.js  # start point
+        | ├ static       # Static files (fonts, images)
+        |   ├ fonts
+        |   ├ images
+    h3#used-frameworks-and-libs
+      | Used Frameworks and libs
+    ul
+      li
+        a(
+          href="https://webpack.js.org/"
+          )
+          | Webpack 4
+      li
+        a(
+          href="https://getbootstrap.com/"
+          )
+          | Bootstrap 4
+          | + 
+        a(
+          href="https://jquery.com/"
+          )
+          | jQuery 3
+      li
+        a(
+          href="https://babeljs.io/"
+          )
+          | Babel.js
+        | for ES6 compile
+      li
+        a(
+          href="https://pugjs.org/"
+          )
+          | Pug
+        | for HTML templates
+      li
+        a(
+          href="http://sass-lang.com/"
+          )
+          Scss
+        | and 
+        a(
+          href="https://github.com/postcss/postcss"
+          )
+          | postcss
+        | with 
+        a(
+          href="https://github.com/postcss/autoprefixer"
+          )
+          | autoprefixer
+        | for CSS (Less and Stylus also available)
+      li
+        a(
+          href="https://github.com/purifycss/purifycss"
+          )
+          | PurifyCSS
+        | for css cleanup after prod build
